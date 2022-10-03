@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Charitable</title>
+    <meta name="description" content="Charitable">
+    <meta name="author" content="Charitable">
+  
+    <meta property="og:title" content="Charitable">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Charitable">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+    <nav>
+        <div class="nav-wrapper navbar-size nav-color ">
+          <a href="#" class="brand-logo"><span class="logo-text">CharitAble</span></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li class="active"><a href="explore.html">EXPLORE</a></li>
+            <li><a class="large material-icons icon dropdown-trigger" href='#' data-target='dropdown1'>account_circle</a></li>
+          </ul>
+        </div>
+    </nav>
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a id="logout" href="#!">LOGOUT</a></li>
+    </ul>    
+
+    <div class="row">
+      <div class="col s12">
+        <span style="padding-top: 16px;" class="second-title">Our Products</span>
+      </div>
+      <div class="col s12 left-container" id="card-section">
+      </div>
+      <div class="col s3"></div>
+      <div class="col s6" style="border-top: 1px solid #0A3B54; margin: 7rem 0rem;"></div>
+      <div class="col s3"></div>
+
+      <div class="col s12">
+        <div class="col s12 ">
+          <div>
+            <span class="third-title">Make Donation&nbsp;&nbsp; <button class="btn waves-effect waves-light modal-trigger" data-target="modal1">Donate here</button></span> 
+            <span class="third-sub-title">Donate Unused/Old Products and Win vouchers and exciting gifts.</span>
+            
+            <div>
+              <div class="center">
+                <ol style="list-style-type: square;" class="steps">
+                  <li><span class="second-sub-title">Donating or recycling consumer electronics conserves our natural resources and avoids air and water pollution, as well as greenhouse gas emissions that are caused by manufacturing virgin materials.</span></li>
+                  <li><span class="second-sub-title">Recycling one million laptops saves the energy equivalent to the electricity used by more than 3,500 U.S. homes in a year.</span></li>
+                  <li><span class="second-sub-title">For every million cell phones we recycle, 35 thousand pounds of copper, 772 pounds of silver, 75 pounds of gold and 33 pounds of palladium can be recovered.</span></li>
+                    <li><span class="second-sub-title">Some changes are a necessity. It is in our hands to protect our planet else face its consequences in the near future.</span></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="col s3"></div>
+      <div class="col s6" style="margin: 3rem 0rem;"></div>
+      <div class="col s3"></div>
+
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="row modal-content" style="padding: 42px;">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="name" type="text" class="validate" required="" aria-required="true">
+                <label for="name">Your Name</label>
+                <span class="helper-text" data-error="Please enter the Name" data-success=""></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="phone-number" type="tel" class="validate" required="" aria-required="true">
+                <label for="phone-number">Phone number</label>
+                <span class="helper-text" data-error="Please enter the phone number" data-success=""></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="title" type="text" class="validate" required="" aria-required="true">
+                <label for="title">Product Title</label>
+                <span class="helper-text" data-error="Please enter the title" data-success=""></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="description" type="text" class="validate" required="" aria-required="true">
+                <label for="description">Description</label>
+                <span class="helper-text" data-error="Please enter the description" data-success=""></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 center-align">
+                <a class="waves-effect waves-light btn" id="donation-submit">submit</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="col s12 contact-us">
+      <div class="col s12" style="padding-top:24px;padding-left:16px;">
+        <span class="second-title" style="color: #E9EFEF; font-size: large;margin-bottom: 0;">CONTACT US</span>
+      </div>
+      <div>
+        <ol style="list-style-type: square;color: #E9EFEF;" class="steps">
+          <li>Reach out to us at charitable@gmail.com</li>
+          <li>Mobile - +61 450611719</li>
+          <li>Melbourne, Victoria, Australia.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/explore-script.js"></script>
+</body>
+</html>

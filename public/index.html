@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Charitable</title>
+  <meta name="description" content="Charitable">
+  <meta name="author" content="Charitable">
+
+  <meta property="og:title" content="Charitable">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Charitable">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main class="main-body">
+      <div class="login-page">
+        <div class="container-1">
+          <img class="materialBoxed materialboxed-image responsive-img" src="images/big-logo.svg">
+        </div>
+        <div class="container-2">
+          <div class="form">
+            <form class="register-form">
+              <div>
+                <input type="text" id="userName" placeholder="User Name" class="validate" required="" aria-required="true">
+                <span class="helper-text" data-error="Please enter the username" data-success=""></span>
+              </div>
+              <div>
+                <input type="email" id="email" placeholder="Email"  class="validate" required="" aria-required="true"/>
+                <span class="helper-text" data-error="Please enter your Email Id" data-success=""></span>
+              </div>
+              <div>
+                <input type="text" id="password" placeholder="Password" class="validate" required="" aria-required="true"/>
+                <span class="helper-text" data-error="Please enter the password" data-success=""></span>
+              </div>
+              <button id="signInFormSubmit">SignUp</button>
+              <p class="message">Existing User? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form" ons>
+              <div>
+                <input type="email" id="emailId" placeholder="Email"  class="validate" required="" aria-required="true"/>
+                <span class="helper-text" data-error="Please enter your Email Id" data-success=""></span>
+              </div>
+              <div>
+                <input type="text" id="pass" placeholder="Password" class="validate" required="" aria-required="true"/>
+                <span class="helper-text" data-error="Please enter the password" data-success=""></span>
+              </div>
+              <button id="logInFormSubmit">SignIn</button>
+              <p class="message">
+                New User? <a href="#">Create an account</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
