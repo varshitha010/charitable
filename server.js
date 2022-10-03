@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const mysql = require("mysql2");
+
 const cors = require("cors");
 const { MongoClient, ServerApiVersion } = require("mongodb");
-var http = require("http").createServer(app);
+
 
 
 require("dotenv").config();
@@ -153,7 +153,7 @@ const insertData = (data) => {
   });
 };
 
-http.listen(port, () => {
+app.listen(port, () => {
   console.log("App listening to: " + port);
   createCollection();
 });
